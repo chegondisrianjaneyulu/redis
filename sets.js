@@ -29,7 +29,7 @@ const redisSetMethods = async () => {
     //check for value exist or not in set if not return false if exists return true3
     const response3  = await redisClient.sIsMember('bikes:racing:usa', 'bike:2');
     console.log('sets-response3', response3); //true
-
+ 
     //return number of members in a set
     const response4 = await redisClient.sCard('bikes:racing:usa');
     console.log('sets-response4', response4);
@@ -41,7 +41,7 @@ const redisSetMethods = async () => {
     const response5 = await redisClient.sDiff(['bikes:racing:france', 'bikes:racing:usa']);
     console.log('response5',response5);
 
-    
+
 
 
 
